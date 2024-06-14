@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Tester</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Typing Speed Tester</h1>
+        </header>
+        <main>
+            <div class="instructions">
+                <p>Start Typing: Begin typing the sample text in the input field. The timer will start automatically when you begin typing.</p>
+                <p>Pause Typing: If you need to take a break, click the pause button to stop the timer.</p>
+                <p>Reset Test: To restart the test, click the reset button. This will clear the input field and reset the timer.</p>
+                <p>View Results: Once you have finished typing the sample text correctly, your typing speed in characters per minute will be displayed in the speed result field.</p>
+            </div>
+            <div class="typing-test">
+                <div class="sample-text" id="sample-text">The quick brown fox jumps over the lazy dog.</div>
+                <input type="text" id="typing-input" placeholder="Start typing here...">
+                <div class="controls">
+                    <button id="pause-btn">Pause</button>
+                    <button id="reset-btn">Reset</button>
+                </div>
+                <div class="results">
+                    <div id="timer">Time: 0s</div>
+                    <div id="char-count">Characters Typed: 0</div>
+                    <div id="speed-result">Speed: 0 CPM</div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Typing Speed Tester</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
